@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
+//6135512003
 void sequence(int n);
 int main(int argc, char  *argv[])
 {
@@ -38,12 +39,12 @@ int main(int argc, char  *argv[])
 void sequence (int n)
 {
     int i,S[n];
+    S[0]=1;
+    S[1]=1;
+    S[2]=2;
+    S[3]=2;
     for (i=0;i<n;i++)
     {
-        S[0]=1;
-        S[1]=1;
-        S[2]=2;
-        S[3]=2;
         if (i>3)
         {
             if (i%3==0)
